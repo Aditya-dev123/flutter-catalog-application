@@ -11,7 +11,17 @@ class Homepage extends StatelessWidget {
         centerTitle: true,
         elevation: 10,
       ),
-      body: Container(color: Colors.greenAccent),
+      body: Center(
+        child: Container(
+          height: 200,
+          width: 200,
+
+          color: Colors.greenAccent,
+          child: Text("This is a container"),
+        ),
+      ),
+
+      drawer: Drawer(backgroundColor: Colors.amber),
     );
   }
 }
